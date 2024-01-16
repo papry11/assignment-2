@@ -736,11 +736,12 @@ footer{
     }
 
     .choose-2{
-        width:42rem;
-        
-        
+        width:100%
     }
-
+    
+    .hotels{
+        margin-bottom:2rem;
+    }
 }
 
 /* tablet or medium devices */
@@ -807,7 +808,11 @@ footer{
     .choose-1{
         display: flex;
         flex-direction: column;
-        margin-bottom: 2rem;
+        
+    }
+
+    .hotels{
+        margin-bottom:2rem;
     }
 
         
@@ -823,7 +828,7 @@ footer{
 
     
     .choose-2{
-        width:54rem;
+        width:100%
         
         
     }
