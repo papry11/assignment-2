@@ -56,6 +56,7 @@ header{
 
 
 nav{
+    max-width:100%;
     display: flex;
     justify-content:space-around;
     align-items: center;
@@ -66,7 +67,7 @@ nav{
     right: 0;
     padding: 2rem 9%;
     background:#fff;
-    
+    z-index: 1000;
 }
 
 .logo{
@@ -153,18 +154,23 @@ nav li a:hover{
 }
 
 .home .select{
-    margin: 0 auto;
     background-color:rgba(255, 255, 255, 0.404);
-    width:68%;
+    width:70%;
     align-items: center;
+    margin: 0 auto;
     padding: 1.3rem;
-    padding-left: 3.5rem;
     border-radius: 1rem;
+}
+
+.select{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 input[type=text] , select , .submit{
     width:16rem;
-    padding:1.5rem 1.2rem;
+    padding:1.5rem 1rem;
     margin:.8rem ;
     display: inline-block;
     border-radius: 1rem;
@@ -288,6 +294,12 @@ input[type=text] , select , .submit{
     margin-right:1.5rem;
     border-radius:1rem;
     border: .2rem solid #f3eae2;
+    box-shadow: .5rem .5rem .8rem rgba(0,0,0,.2);
+   
+}
+
+.choose-1 .hotels:hover{
+    box-shadow: 1rem 1rem 1rem rgba(0,0,0,.3);
 }
 
 .choose-1 .map{
@@ -295,7 +307,14 @@ input[type=text] , select , .submit{
     padding:2rem 5rem;
     border-radius:1rem;
     border: .2rem solid #dff3f8;
+    box-shadow: .5rem .5rem .8rem rgba(0,0,0,.2);
 }
+
+
+.choose-1 .map:hover{
+    box-shadow: 1rem 1rem 1rem rgba(0,0,0,.3);
+}
+
 
 .choose-2{
     width:60rem;
@@ -305,7 +324,14 @@ input[type=text] , select , .submit{
     align-items: center;
     border-radius:1rem;
     border: .2rem solid #fcdfdf;
+    box-shadow: .5rem .5rem .8rem rgba(0,0,0,.2);
 }
+
+
+.choose-2:hover{
+    box-shadow: 1rem 1rem 1rem rgba(0,0,0,.3);
+}
+
 
 /* why choose us end */
 
@@ -463,7 +489,8 @@ input[type=text] , select , .submit{
   
   #review  .box-container .box {
     max-width: 60rem;
-    background:orange;
+    background:#f7d7b7;
+
     display: flex;
     box-align: center;
     align-items: center;
@@ -503,7 +530,7 @@ input[type=text] , select , .submit{
   }
   
   #review .box-container .box .info p {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     margin: 2rem;
     color: #333;
     text-align: left;
@@ -517,6 +544,21 @@ input[type=text] , select , .submit{
   
   #review .box-container .box:nth-child(even){
     float: right;
+  }
+
+  #review  .box-container  #box-1{
+    background-color:#d2eef5 ;
+  }
+
+  
+  
+  #review  .box-container  #box-4{
+    background-color:rgb(247, 247, 130);
+  }
+  
+  
+  #review  .box-container  #box-3{
+    background-color:rgb(199, 250, 121);
   }
   
 
@@ -664,6 +706,10 @@ footer{
         padding: 20px;
     }
 
+    nav{
+        max-width:100%;
+    }
+
     nav, .popular-tour-section{
         flex-direction: column;
     }
@@ -671,6 +717,19 @@ footer{
     nav ul{
         display:none;
     }
+
+    
+.select{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:0 auto;
+}
+
+input[type=text] , select , .submit{
+    width:100%;
+}
+
 
     .explore{
         padding:0 20px;
@@ -742,6 +801,12 @@ footer{
     .hotels{
         margin-bottom:2rem;
     }
+
+    footer{
+        max-width:100%;
+    }
+
+
 }
 
 /* tablet or medium devices */
@@ -829,9 +894,26 @@ footer{
     
     .choose-2{
         width:100%
-        
-        
     }
+
+    nav{
+        max-width:100%;
+    }
+
+    footer{
+        max-width:100%;
+    }
+
+        
+    .select{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin:0 auto;
+    }
+
+
 }
 
 
